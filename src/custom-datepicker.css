@@ -1,0 +1,45 @@
+.custom-calendar .react-datepicker__header {
+  background-color: #ffffff; /* White background for the header */
+  border-bottom: none;
+}
+
+.custom-calendar .react-datepicker__current-month,
+.custom-calendar .react-datepicker__navigation-icon {
+  color: #000000; /* Black color for current month and navigation icons */
+}
+
+.custom-calendar .react-datepicker__day--selected,
+.custom-calendar .react-datepicker__day--keyboard-selected {
+  background-color: #1837e8 !important; /* Red background for selected day */
+  color: white !important; /* White text for selected day */
+}
+
+.custom-calendar .react-datepicker__day:hover {
+  background-color: #1837e8 !important; /* Red background for hover */
+  color: white !important; /* White text on hover */
+}
+
+.custom-calendar .react-datepicker__day--disabled {
+  color: #d1d5db; /* Grey color for disabled days */
+}
+
+.custom-calendar .react-datepicker__day {
+  color: #1f2937; /* Default text color for days */
+  border-radius: 0.375rem; /* Rounded corners for days */
+}
+
+.custom-calendar .react-datepicker__navigation--previous {
+  left: 10px;
+}
+
+.custom-calendar .react-datepicker__navigation--next {
+  right: 10px;
+}
+
+.custom-calendar .react-datepicker__navigation-icon::before {
+  border-color: #000000; /* Black color for navigation icons */
+}
+
+.custom-calendar .react-datepicker__day-names {
+  color: #9ca3af; /* Grey color for day names */
+}
