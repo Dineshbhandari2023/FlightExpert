@@ -6,14 +6,18 @@ import SelectDate from "./SelectDate";
 import TravellerBooking from "./TravellerBooking";
 
 function FlightSearchForm() {
+  const [tripType, setTripType] = useState("roundTrip");
+
   return (
     <div className="m-4 flex justify-center items-center h-screen w-screen bg-blue-100">
       <div className="m-1 p-4 h-60 w-auto border border-gray-300 rounded-lg shadow-lg bg-white relative">
-        <TripType />
+        {/* <TripType /> */}
+        <TripType tripType={tripType} setTripType={setTripType} />
         <div className="flex">
           <div className=" flex flex-row ">
             <Airport />
-            <SelectDate />
+            {/* <SelectDate /> */}
+            <SelectDate tripType={tripType} setTripType={setTripType} />
             <TravellerBooking />
           </div>
         </div>
