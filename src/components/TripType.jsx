@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const TripType = ({ tripType, setTripType }) => {
   return (
-    <div className="flex flex-initial text-sm ">
+    <div className="flex flex-initial text-sm ml-4">
       <label className="mr-2">
         <input
           type="radio"

@@ -13,8 +13,8 @@ const FareType = () => {
   };
 
   return (
-    <div className="mb-1 relative">
-      <div className="flex items-center space-x-1">
+    <div className="">
+      <div className="flex items-center space-x-1 ml-3">
         <label className="font-semibold text-gray-700">Fare Type:</label>
         {["Regular Fares", "Umrah Fares", "Student Fares", "Seaman Fares"].map(
           (fare) => (
