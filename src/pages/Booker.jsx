@@ -9,7 +9,7 @@ import FlightCards from '../components/feature1/FlightCards'
 
 const Booker = () => {
   return (
-    <div className='flex w-10/12 m-auto '>
+    <div className='flex w-10/12 m-auto shadow-lg '>
 
       <div className='w-4/12 '>
         <SessionTimeout />
