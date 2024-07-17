@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { IoIosArrowDown } from "react-icons/io";
-import { IoIosArrowRoundForward } from "react-icons/io";
-import DetailCard from './DetailCard';
+// import { IoIosArrowRoundForward } from "react-icons/io";
+import DetailCard from '../feature1/DetailCard';
 
 const FlightCards = () => {
     const [isExpanded, setIsExpanded] = useState(false);
