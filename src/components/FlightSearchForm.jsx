@@ -10,9 +10,16 @@ function FlightSearchForm() {
   const [tripType, setTripType] = useState("roundTrip");
 
   return (
+
+//     features/LandingPage
+    <div className="m-4 flex justify-center items-center h-screen w-screen">
+      <div className="m-1 p-4 h-60 w-auto border border-gray-300 rounded-lg shadow-lg bg-white relative">
+
+    
     <div className="mx-6 justify-center items-center h-screen w-screen">
       {/* <div className="my-20 p-4 h-60 w-auto justify-center border border-gray-300 rounded-lg shadow-lg bg-white "> */}
       <div className='my-20 w-10/12 h-auto m-auto shadow-lg '>
+
         {/* <TripType /> */}
         <TripType tripType={tripType} setTripType={setTripType} />
         <div className="flex">
