@@ -129,7 +129,7 @@ const Airport = () => {
         <label className="flex font-medium text-sm text-gray-700 tracking-wide">
           From
         </label>
-        <div className="pr-1 text-xl text-gray-700 font-bold tracking-wide">
+        <div className="pr-1 text-start text-xl text-gray-700 font-bold tracking-wide">
           {from.city}
         </div>
         <div className="text-xs text-gray-500 tracking-wide">{from.name}</div>
@@ -143,7 +143,7 @@ const Airport = () => {
           <label className="flex font-medium text-sm text-gray-700 tracking-wide">
             To
           </label>
-          <div className="pr-1 text-xl text-gray-700 font-bold tracking-wide">
+          <div className="pr-1 text-start text-xl text-gray-700 font-bold tracking-wide">
             {to.city}
           </div>
           <div className="text-xs text-gray-500 tracking-wide">{to.name}</div>
@@ -153,7 +153,7 @@ const Airport = () => {
       {isDropdownOpen && (
         <div
           ref={dropdownRef}
-          className={`absolute w-64 bg-gray-100 border border-gray-300 rounded-lg shadow-2xl z-10 ${
+          className={`absolute text-start w-64 bg-gray-100 border border-gray-300 rounded-lg shadow-2xl z-10 ${
             selectedField === "from" ? "top-full left-0" : "top-full right-0"
           }`}
         >

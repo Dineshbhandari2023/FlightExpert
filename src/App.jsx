@@ -1,38 +1,19 @@
-// import React from "react";
-// import FlightSearchForm from "./components/FlightSearchForm";
 
-// function App() {
-//   return (
-//     <div className="App">
-//       <FlightSearchForm />
-//     </div>
-//   );
-// }
-
-// export default App;
-import React from 'react';
-import Header from './components/Header';
-import Footer from './components/Footer';
- import TravelBanner from './components/TravelBanner';
- import Banner from './components/HeroSection';
+import React from "react";
+import Home from "./components/Home";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import ModifySearch from "./components/ModifySearch";
 
 
 function App() {
   return (
-    <div className="App">
-
-//     features/LandingPage
-      <Header />
-      <Banner/>
-      <TravelBanner />
-      <Footer />
-
-      <FlightSearchForm />
-      
-
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/search" element={<ModifySearch />} />
+      </Routes>
+    </Router>
   );
 }
 
 export default App;
-

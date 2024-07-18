@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { SlArrowDown } from "react-icons/sl";
 import { DateRangePicker } from "react-date-range";
-import "react-date-range/dist/styles.css"; // main css file
-import "react-date-range/dist/theme/default.css"; // theme css file
-import "../custom-datepicker.css"; // custom styles
+import "react-date-range/dist/styles.css";
+import "react-date-range/dist/theme/default.css";
+import "../custom-datepicker.css";
 
 const SelectDate = ({ tripType, setTripType }) => {
   const [dateRange, setDateRange] = useState([
