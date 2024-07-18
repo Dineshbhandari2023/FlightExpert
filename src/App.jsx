@@ -16,13 +16,20 @@ import Footer from './components/Footer';
  import TravelBanner from './components/TravelBanner';
  import Banner from './components/HeroSection';
 
+
 function App() {
   return (
     <div className="App">
+
+//     features/LandingPage
       <Header />
       <Banner/>
       <TravelBanner />
       <Footer />
+
+      <FlightSearchForm />
+      
+
     </div>
   );
 }
