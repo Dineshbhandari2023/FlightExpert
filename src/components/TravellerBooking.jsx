@@ -61,15 +61,15 @@ const TravellerBooking = () => {
             ref={travelerDropdownRef}
           >
             <div className="mb-1">
-              <div className="text-blue-500 text-sm font-semibold">
+              <div className="text-blue-500 text-start text-sm font-semibold">
                 Travelers
               </div>
               {["adults", "children", "kids", "infants"].map((type) => (
                 <div
-                  className="flex justify-between items-center text-sm font-semibold text-blue-300 my-2"
+                  className="flex justify-between items-start text-sm font-semibold text-blue-300 my-2"
                   key={type}
                 >
-                  <div className="flex flex-col">
+                  <div className="flex flex-col text-start">
                     <span className="font-semibold">
                       {type.charAt(0).toUpperCase() + type.slice(1)}
                     </span>
@@ -133,7 +133,7 @@ const TravellerBooking = () => {
               </div>
             </div>
             <button
-              className="ml-[100px] text-center text-sm font-bold tracking-wide border border-blue-700 bg-white-500 text-blue-700 p-1 rounded-lg"
+              className="text-end text-sm font-bold tracking-wide border border-blue-700 bg-white-500 text-blue-700 p-1 rounded-lg"
               onClick={(e) => {
                 e.stopPropagation();
                 setIsTravelerDropdownOpen(false);
