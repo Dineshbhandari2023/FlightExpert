@@ -3,7 +3,7 @@ import hero2 from "../assets/hero2.png";
 
 const TravelBanner = () => {
   return (
-    <div className="bg-gray-200">
+    <div className="">
       <div className="max-w-7xl my-8 mx-auto py-6 px-4 sm:px-6 lg:px-8">
         <h1 className="text-3xl font-bold text-gray-900 border-l-[2px] p-2 border-blue-500">
           Explore unique <span className="text-blue-500">places to stay</span>
