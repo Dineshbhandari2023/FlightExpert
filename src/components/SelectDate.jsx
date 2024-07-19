@@ -35,10 +35,10 @@ const SelectDate = ({ tripType, setTripType }) => {
         className="p-2 border border-gray-300 rounded-l-lg cursor-pointer relative"
         onClick={handleDepartureClick}
       >
-        <label className="flex font-medium text-sm text-gray-700 tracking-wide">
+        <label className="flex font-medium text-sm text-gray-500 tracking-wide">
           Departure <SlArrowDown className="m-1 size-3 cursor-pointer" />
         </label>
-        <div className="pr-1 text-xl text-gray-700 font-bold tracking-wide">
+        <div className="pr-1 text-xl text-gray-500 font-bold tracking-wide">
           {dateRange[0].startDate.toDateString()}
         </div>
         {isDepartureOpen && (
@@ -67,10 +67,10 @@ const SelectDate = ({ tripType, setTripType }) => {
         }`}
         onClick={handleReturnClick}
       >
-        <label className="flex font-medium text-sm text-gray-700 tracking-wide">
+        <label className="flex font-medium text-sm text-gray-500 tracking-wide">
           Return <SlArrowDown className="m-1 size-3 cursor-pointer" />
         </label>
-        <div className="pr-1 text-xl text-gray-700 font-bold tracking-wide">
+        <div className="pr-1 text-xl text-gray-500 font-bold tracking-wide">
           {tripType === "oneWay"
             ? "Tap to book return ticket"
             : dateRange[0].endDate.toDateString()}

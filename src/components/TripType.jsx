@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const TripType = ({ tripType, setTripType }) => {
   return (
-    <div className="flex flex-initial text-sm ml-4">
+    <div className="flex text-md text-gray-500 font-semibold ml-4">
       <label className="mr-2">
         <input
           type="radio"
@@ -10,7 +10,7 @@ const TripType = ({ tripType, setTripType }) => {
           value="oneWay"
           checked={tripType === "oneWay"}
           onChange={() => setTripType("oneWay")}
-          className="mr-2 size-3"
+          className="mr-2 size-4"
         />
         One Way
       </label>
@@ -21,7 +21,7 @@ const TripType = ({ tripType, setTripType }) => {
           value="roundTrip"
           checked={tripType === "roundTrip"}
           onChange={() => setTripType("roundTrip")}
-          className="mr-2 size-3"
+          className="mr-2 size-4"
         />
         Round Trip
       </label>

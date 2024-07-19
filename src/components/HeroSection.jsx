@@ -6,16 +6,20 @@ const Banner = () => {
   return (
     <div>
       <div
-        className="relative justify-center text-center h-[484px] bg-cover bg-center"
+        className="relative justify-center text-center h-[484px] bg-center bg-cover"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
-        <div className="flex  justify-center left-1/2">
-          <span className="text-6xl mb-6 font-bold text-black justify-center text-center">
-            It's more than
-            <br /> just a trip
-          </span>
+        <div className="justify-center text-center">
+          <div className="flex justify-center">
+            <span className="text-6xl mb-6 font-bold text-black justify-center text-center">
+              It's more than
+              <br /> just a trip
+            </span>
+          </div>
+          <div className="flex justify-center text-center">
+            <FlightSearchForm />
+          </div>
         </div>
-        <FlightSearchForm />
       </div>
     </div>
   );
