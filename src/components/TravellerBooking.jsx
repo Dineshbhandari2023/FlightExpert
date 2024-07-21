@@ -48,10 +48,10 @@ const TravellerBooking = () => {
         className="p-2 border border-gray-300 rounded-lg cursor-pointer relative"
         onClick={handleTravelerClick}
       >
-        <label className="flex text-xs font-semibold text-gray-700 tracking-wide">
+        <label className="flex text-xs font-semibold text-gray-500 tracking-wide">
           Traveler & Booking Class
         </label>
-        <div className="pr-1 text-xl text-gray-700 font-bold tracking-wide">
+        <div className="pr-1 text-xl text-gray-500 font-bold tracking-wide">
           {totalTravelers} Traveler{totalTravelers > 1 && "s"}
         </div>
         <div className="text-xs text-gray-500 tracking-wide">{travelClass}</div>

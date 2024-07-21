@@ -1,7 +1,13 @@
 import React from "react";
 import logo from "../assets/logo.png";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const navigate = useNavigate()
+
+  const handleRedirect = () => {
+    navigate("/home/signin")
+  }
   return (
     <header className="text-white bg-purple-50 flex justify-between items-center p-4">
       <div className="flex items-center ml-32">

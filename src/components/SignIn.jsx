@@ -3,8 +3,10 @@ import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faLock } from '@fortawesome/free-solid-svg-icons';
 import { faGoogle } from '@fortawesome/free-brands-svg-icons';
-import { auth, signInWithGoogle } from './firebase';
-import { signInWithEmailAndPassword, sendPasswordResetEmail, getRedirectResult } from 'firebase/auth';
+import { signInWithGoogle } from './firebase';
+import { auth } from "../firebaseConfig";
+import { signInWithEmailAndPassword, sendPasswordResetEmail, getRedirectResult } from "firebase/auth";
+
 
 const SignIn = () => {
   const [email, setEmail] = useState('');
@@ -156,7 +158,7 @@ const SignIn = () => {
           <button
             type="button"
             className="text-blue-500 hover:text-blue-700"
-            onClick={() => navigate('/signup')}
+            onClick={() => navigate('/home/signup')}
           >
             Create Account
           </button>
