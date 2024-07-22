@@ -121,11 +121,10 @@ const Airport = () => {
   );
 
   return (
-    <div className="sm:flex-col">
-      <div className="p-4 flex sm:flex-row-2 flex md:flex-cols lg:flex-col-2">
-      
+    <div className="sm:flex-col md:flex-col">
+      <div className="relative p-4 flex sm:flex-row-2">
         <div
-          className="relative p-2 border border-gray-300 rounded-lg cursor-pointer w-2/10"
+          className="p-2 border border-gray-300 rounded-lg cursor-pointer w-2/10"
           onClick={() => handleFieldClick("from")}
         >
           <label className="flex font-medium md:font-semibold text-sm text-gray-500 tracking-wide">
@@ -138,10 +137,9 @@ const Airport = () => {
             {from.name}
           </div>
         </div>
-        <TbArrowsRightLeft className="absolute py-1 mt-8 ml-[210px] size-6 z-10 text-blue-600 border border-gray-500 rounded-full shadow-lg bg-white" />
-        <div>
+        <TbArrowsRightLeft className="absolute py-1 ml-[209px] my-8 size-6 z-10 text-blue-600 border border-gray-500 rounded-full shadow-lg bg-white" />
         <div
-          className="relative p-1 border border-gray-300 rounded-lg cursor-pointer w-2/10"
+          className="p-1 border border-gray-300 rounded-lg cursor-pointer w-2/10"
           onClick={() => handleFieldClick("to")}
         >
           <div className="p-2">
@@ -154,11 +152,14 @@ const Airport = () => {
             <div className="text-xs text-start text-gray-500 tracking-wide">
               {to.name}
             </div>
+          </div>
+        </div>
+
         {isDropdownOpen && (
           <div
             ref={dropdownRef}
-            className={`absolute m-2 text-start w-64 bg-gray-100 border border-gray-300 rounded-lg shadow-2xl z-10 ${
-              selectedField === "from" ? "top-full right-48" : "top-full right-0"
+            className={`absolute text-start w-64 bg-gray-100 border border-gray-300 rounded-lg shadow-2xl z-10 ${
+              selectedField === "from" ? "top-full left-0" : "top-full right-0"
             }`}
           >
             <div className="mb-4">
@@ -197,12 +198,7 @@ const Airport = () => {
             </div>
           </div>
         )}
-          </div>
-        </div>
-        </div>
-        </div>
-
-      
+      </div>
     </div>
   );
 };
