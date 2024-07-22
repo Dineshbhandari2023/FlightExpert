@@ -1,6 +1,5 @@
-
 import { initializeApp } from "firebase/app";
-import { getAuth, getApp  } from "firebase/auth";
+import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
   apiKey: "AIzaSyDXlve1oIBf1X3rbCs5VsPbvKMnb3G7rS8",
@@ -9,11 +8,9 @@ const firebaseConfig = {
   storageBucket: "flightexpert-6e66e.appspot.com",
   messagingSenderId: "660579623917",
   appId: "1:660579623917:web:24b4bc624d9c1f1151bde4",
-  measurementId: "G-TWPBW0PQ4W"
 };
 
-
 const app = initializeApp(firebaseConfig);
-const auth = getAuth (app);
+const auth = getAuth(app);
 
-export {app, auth };
+export { app, auth };
